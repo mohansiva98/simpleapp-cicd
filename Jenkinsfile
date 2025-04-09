@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/yourname/simpleapp-cicd.git'
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/mohansiva98/simpleapp-cicd.git'
             }
         }
 
